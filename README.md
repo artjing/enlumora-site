@@ -16,4 +16,4 @@ Then open `http://localhost:8080`.
 - `privacy.html` — beta privacy overview
 - `styles.css` — responsive visual system
 - `script.js` — navigation and reveal interactions
-- `assets/` — optimized product imagery and Qigong preview video
+- `assets/` — optimized product imagery and Qi Flow preview video
