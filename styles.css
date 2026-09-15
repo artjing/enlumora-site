@@ -135,11 +135,62 @@ button { font: inherit; }
   letter-spacing: -.065em;
 }
 
-.hero h1 span, .section-heading h2 span, .practice-caption h2 span, .coach-copy h2 span, .journey-copy h2 span, .final-cta h2 span {
+.section-heading h2 span, .practice-caption h2 span, .coach-copy h2 span, .journey-copy h2 span, .final-cta h2 span {
   color: transparent;
   background: linear-gradient(90deg, #fff 5%, #a9a4c7 54%, #6f7080);
   background-clip: text;
   -webkit-background-clip: text;
+}
+
+.hero .hero-title {
+  max-width: 620px;
+  font-size: clamp(54px, 6.6vw, 92px);
+  font-weight: 520;
+  line-height: .88;
+  letter-spacing: -.062em;
+}
+
+.hero-title__quiet {
+  display: block;
+  color: rgba(247,247,250,.92);
+  font-size: .78em;
+  letter-spacing: -.052em;
+}
+
+.hero-title__flow {
+  position: relative;
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  margin-top: .13em;
+  margin-left: clamp(22px, 4.6vw, 64px);
+  color: #e8ebe4;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.04em;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -.07em;
+  text-shadow: 0 0 34px rgba(73,232,120,.06);
+}
+
+.hero-title__flow::after {
+  content: "";
+  position: absolute;
+  right: -.08em;
+  bottom: -.09em;
+  left: .03em;
+  height: .18em;
+  border-top: 1px solid rgba(125,219,158,.58);
+  border-radius: 50%;
+  transform: rotate(-1.5deg) scaleX(.96);
+  transform-origin: left center;
+  box-shadow: 0 -9px 28px rgba(73,232,120,.09);
+  animation: title-current 6.5s ease-in-out infinite alternate;
+}
+
+@keyframes title-current {
+  from { opacity: .42; transform: rotate(-1.5deg) scaleX(.93) translateX(-.02em); }
+  to { opacity: .8; transform: rotate(-.4deg) scaleX(1) translateX(.04em); }
 }
 
 .hero-lede {
@@ -371,7 +422,8 @@ button { font: inherit; }
   .mobile-menu a { padding: 13px 11px; border-bottom: 1px solid rgba(255,255,255,.05); color: var(--muted); font-size: 14px; }
   .mobile-menu a:last-child { margin-top: 8px; border: 0; border-radius: 999px; color: #0b0c0f; background: white; text-align: center; font-weight: 700; }
   .hero { min-height: auto; padding-top: 138px; padding-bottom: 85px; grid-template-columns: 1fr; gap: 60px; }
-  .hero h1 { font-size: clamp(57px, 16vw, 76px); }
+  .hero .hero-title { font-size: clamp(52px, 14.3vw, 66px); }
+  .hero-title__flow { margin-left: clamp(13px, 5vw, 24px); }
   .hero-lede { font-size: 18px; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 20px; }
   .signal-row { gap: 16px; }
