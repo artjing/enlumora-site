@@ -27,6 +27,7 @@
     </a>
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#intelligence">Intelligence</a>
+      <a href="#wearables">Wearables</a>
       <a href="#practice">Practice</a>
       <a href="#coach">Coach</a>
       <a href="#journey">Journey</a>
@@ -37,6 +38,7 @@
     </button>
     <div class="mobile-menu" data-mobile-menu>
       <a href="#intelligence">Intelligence</a>
+      <a href="#wearables">Wearables</a>
       <a href="#practice">Practice</a>
       <a href="#coach">Coach</a>
       <a href="#journey">Journey</a>
@@ -62,6 +64,7 @@
           <span><i class="signal-dot signal-dot--pink"></i>Mood</span>
           <span><i class="signal-dot signal-dot--green"></i>Space</span>
         </div>
+        <p class="hero-device-note">Made for iPhone + Apple Watch <span>·</span> Connected through Apple Health</p>
       </div>
 
       <div class="hero-visual reveal reveal--delay" aria-label="Enlumora app preview">
@@ -73,13 +76,24 @@
             <img src="assets/enlumora-app-home.webp" alt="Enlumora energy home screen" width="720" height="1561">
           </div>
         </div>
+        <div class="watch-companion" aria-label="Enlumora Apple Watch companion preview">
+          <div class="watch-hardware" aria-hidden="true">
+            <span class="watch-band watch-band--top"></span>
+            <span class="watch-band watch-band--bottom"></span>
+            <div class="watch-case">
+              <img src="assets/enlumora-watch-ui.png" alt="" width="374" height="446">
+            </div>
+            <i class="watch-crown"></i>
+          </div>
+          <span><i></i> Apple Watch companion</span>
+        </div>
         <div class="floating-chip floating-chip--top">
           <span class="chip-icon">✦</span>
           <span><small>ENERGY COMPASS</small>Gentle reading ready</span>
         </div>
         <div class="floating-chip floating-chip--bottom">
           <span class="chip-pulse"></span>
-          <span><small>BODY + MOOD + SPACE</small>One living pattern</span>
+          <span><small>FRESH HEALTH SIGNALS</small>Energy state updated</span>
         </div>
       </div>
     </section>
@@ -118,6 +132,81 @@
           <span class="card-meta">Camera scan · Spatial memory · Gentle guidance</span>
         </article>
       </div>
+    </section>
+
+    <section class="section wearable-section shell" id="wearables">
+      <div class="section-heading wearable-heading reveal">
+        <p class="eyebrow">Connected signals</p>
+        <h2>Your body changes.<br><span>Enlumora notices.</span></h2>
+        <p>Fresh biometric signals flow through Apple Health and become a clearer view of recovery, rhythm, and readiness. Your wearable adds precision; your own check-in keeps the picture human.</p>
+      </div>
+
+      <div class="wearable-stage reveal">
+        <div class="wearable-visual">
+          <div class="live-badge"><i></i><span><small>SIGNAL STATUS</small>Fresh data available</span></div>
+          <img src="assets/enlumora-wearables-family.png" alt="A smartwatch, screenless recovery band, and smart ring supported by Enlumora" width="1500" height="1000">
+          <div class="device-labels" aria-label="Supported wearable families">
+            <span>Apple Watch</span>
+            <span>WHOOP</span>
+            <span>Oura Ring</span>
+          </div>
+        </div>
+
+        <div class="signal-reader" aria-label="Health signals Enlumora can interpret">
+          <div class="signal-reader__head">
+            <div><small>ENERGY INPUTS</small><strong>What Enlumora reads</strong></div>
+            <span>Apple Health</span>
+          </div>
+          <div class="biometric-list">
+            <article>
+              <span class="biometric-index">01</span>
+              <div><h3>Heart &amp; recovery</h3><p>Heart rate, resting heart rate, and HRV against your recent rhythm.</p></div>
+              <em>HR · RHR · HRV</em>
+            </article>
+            <article>
+              <span class="biometric-index">02</span>
+              <div><h3>Sleep &amp; daily rhythm</h3><p>Sleep duration and timing help distinguish depletion from a temporary dip.</p></div>
+              <em>SLEEP</em>
+            </article>
+            <article>
+              <span class="biometric-index">03</span>
+              <div><h3>Movement &amp; load</h3><p>Steps, distance, and active energy add context without rewarding overexertion.</p></div>
+              <em>MOVE</em>
+            </article>
+            <article>
+              <span class="biometric-index">04</span>
+              <div><h3>Freshness &amp; confidence</h3><p>Source and timestamp tell the system how much weight to give each signal.</p></div>
+              <em>LIVE</em>
+            </article>
+          </div>
+          <div class="energy-refresh">
+            <span class="refresh-orb" aria-hidden="true"></span>
+            <div><small>WHEN NEW DATA ARRIVES</small><strong>Your energy state refreshes—and the next action can adapt.</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="compatibility-grid reveal">
+        <article>
+          <div class="compatibility-top"><span class="device-glyph device-glyph--watch" aria-hidden="true"></span><em>Native</em></div>
+          <h3>Apple Watch</h3>
+          <p>The primary companion experience, with fresh Apple Health samples and an energy glance on your wrist.</p>
+          <span class="compatibility-status"><i></i> Apple Health connected</span>
+        </article>
+        <article>
+          <div class="compatibility-top"><span class="device-glyph device-glyph--ring" aria-hidden="true"></span><em>Via Health</em></div>
+          <h3>Oura Ring</h3>
+          <p>Use the sleep, recovery, and activity signals Oura makes available through Apple Health.</p>
+          <span class="compatibility-status"><i></i> Sync permissions required</span>
+        </article>
+        <article>
+          <div class="compatibility-top"><span class="device-glyph device-glyph--band" aria-hidden="true"></span><em>Via Health</em></div>
+          <h3>WHOOP</h3>
+          <p>Bring standard recovery and activity signals into the same Enlumora energy context.</p>
+          <span class="compatibility-status"><i></i> Sync permissions required</span>
+        </article>
+      </div>
+      <p class="wearable-footnote">Signal availability and update timing depend on device settings, permissions, and what each provider writes to Apple Health. Enlumora supports everyday wellness; it is not a medical monitor.</p>
     </section>
 
     <section class="practice-section" id="practice">
@@ -167,20 +256,30 @@
       <div class="coach-panel reveal">
         <div class="coach-copy">
           <p class="eyebrow">Enlumora Coach</p>
-          <h2>A coach that knows<br><span>your context.</span></h2>
-          <p>Ask about your energy, choose a practice, reflect after movement, or set a thoughtful reminder. The Coach uses your current state and journey—not generic motivation.</p>
+          <h2>From signal to support,<br><span>right when it matters.</span></h2>
+          <p>When your energy pattern meaningfully shifts, Enlumora can explain what changed, send a thoughtful notification, and help you choose what to do next. The Coach responds to your context—not generic motivation.</p>
           <ul class="coach-features">
-            <li><span>01</span> State-aware guidance</li>
-            <li><span>02</span> Personal practice suggestions</li>
-            <li><span>03</span> Gentle, timely reminders</li>
+            <li><span>01</span> Notice a meaningful energy change</li>
+            <li><span>02</span> Notify with context—not alarm</li>
+            <li><span>03</span> Adapt your next Qi Flow or recovery action</li>
           </ul>
         </div>
-        <div class="coach-demo" aria-label="Enlumora Coach conversation preview">
-          <div class="coach-status"><span></span> Enlumora Coach <small>Context ready</small></div>
-          <div class="message message--user">I feel restless, but I don’t have much energy.</div>
-          <div class="message message--coach">
+        <div class="coach-demo" aria-label="Personalized energy notification and Enlumora Coach response preview">
+          <div class="coach-status"><span></span> Live energy loop <small>Context ready</small></div>
+          <div class="coach-trigger">
+            <span class="trigger-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            <div><small>10:42 AM · NEW PATTERN</small><strong>Recovery rhythm shifted</strong><p>Fresh HRV and sleep signals</p></div>
+            <em>Detected</em>
+          </div>
+          <div class="notification-preview">
+            <div class="notification-head"><img src="assets/app-icon.webp" alt="" width="30" height="30"><strong>Enlumora</strong><span>now</span></div>
+            <h3>Your recovery rhythm changed</h3>
+            <p>Your HRV is below its recent pattern after a shorter night. Keep today gentle?</p>
+            <div class="notification-actions"><span>Ask Coach</span><span>Start 5-min Qi Flow</span></div>
+          </div>
+          <div class="message message--coach message--coach-context">
             <img src="assets/coach.webp" alt="" width="42" height="42">
-            <p>Let’s avoid pushing. A five-minute shoulder release can give the restlessness somewhere to go.</p>
+            <p>I’d lower intensity today. A five-minute shoulder release can support circulation without asking you to push.</p>
           </div>
           <div class="suggestion-card">
             <span class="suggestion-mark"></span>
@@ -220,7 +319,7 @@
       <h2>Your energy is always<br><span>telling a story.</span></h2>
       <p>Enlumora helps you hear it—and respond with care.</p>
       <a class="button button--primary" href="https://testflight.apple.com/join/pq1HumvR" target="_blank" rel="noreferrer">Join the private beta <span>↗</span></a>
-      <small>Designed for iPhone · Apple Watch support in development</small>
+      <small>Designed for iPhone + Apple Watch · Connected through Apple Health</small>
     </section>
   </main>
 
